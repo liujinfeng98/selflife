@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.selflife.dao.AddCatTag">
+         <insert id="addCatTag" parameterType="CatTag" keyProperty="ec_cattag_id">
+             insert into bd_techcat_dt(          
+	            ec_cattag_name,	         	
+	         	ec_cattag_code,
+	         	ec_cattag_time
+		         )
+		       values
+		         ( 
+		        #{name},#{code},
+		         NOW()
+		         )
+         </insert>
+</mapper>

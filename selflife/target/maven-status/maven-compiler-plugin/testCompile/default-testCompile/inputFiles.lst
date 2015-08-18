@@ -1,0 +1,12 @@
+/home/ljf/workspace/selflife_web/src/test/java/com/selflife/web/test/UserLoginTest.java
+/home/ljf/workspace/selflife_web/src/test/java/com/selflife/service/test/QueryCommandServiceTest.java
+/home/ljf/workspace/selflife_web/src/test/java/com/selflife/web/test/HttpPostMethod.java
+/home/ljf/workspace/selflife_web/src/test/java/com/selflife/service/test/AddCatTagServiceTest.java
+/home/ljf/workspace/selflife_web/src/test/java/com/selflife/service/test/AddCommandServiceTest.java
+/home/ljf/workspace/selflife_web/src/test/java/com/selflife/service/test/QueryCommandAllServiceTest.java
+/home/ljf/workspace/selflife_web/src/test/java/com/selflife/service/test/DelCommandServiceTest.java
+/home/ljf/workspace/selflife_web/src/test/java/com/selflife/service/test/QueryCommandAllByContServiceTest.java
+/home/ljf/workspace/selflife_web/src/test/java/com/selflife/service/test/UpdateCatTagServiceTest.java
+/home/ljf/workspace/selflife_web/src/test/java/com/selflife/service/test/QueryCatTagAllServiceTest.java
+/home/ljf/workspace/selflife_web/src/test/java/com/selflife/web/test/ServerTimeTest.java
+/home/ljf/workspace/selflife_web/src/test/java/com/selflife/service/test/UpdateCommandServiceTest.java

@@ -1,0 +1,325 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.selflife</groupId>
+  <artifactId>selflift_web</artifactId>
+  <version>0.0.2-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <name>selflife</name>
+  <properties>
+        <!-- spring版本号 -->
+        <spring.version>4.1.6.RELEASE</spring.version>
+        <!-- mybatis版本号 -->
+        <mybatis.version>3.2.8</mybatis.version>
+        <!-- log4j日志文件管理包版本 -->
+        <slf4j.version>1.6.1</slf4j.version>
+        <log4j.version>1.2.16</log4j.version>
+  </properties>
+ 
+	 <repositories>
+        <repository>
+            <id>jboss</id>
+            <name>jboss repo</name>
+            <url>http://192.168.2.185:8081/nexus/content/groups/public/</url>
+        </repository>
+    </repositories>
+
+    <!--modules>
+        <module>osgi_web</module>
+    </modules-->
+
+     <!--  dependency>
+        <groupId>org.jboss.resteasy</groupId>
+        <artifactId>resteasy-servlet-initializer</artifactId>
+        <version>3.0.9.Final</version>
+    </dependency>
+    <dependency>
+    <groupId>javax.inject</groupId>
+    <artifactId>javax.inject</artifactId>
+    <version>1</version>
+    </dependency>
+    <dependency>
+	     <groupId>javax.servlet</groupId>
+	    <artifactId>javax.servlet-api</artifactId>
+	    <version>3.0.1</version>
+	    </dependency>-->
+    <dependencies>
+	    
+		   <dependency>
+		    <groupId>org.mybatis.caches</groupId>
+		    <artifactId>mybatis-memcached</artifactId>
+		    <version>1.0.0</version>
+		  </dependency>
+   
+      <dependency>
+		  <groupId>org.jboss.resteasy</groupId>
+		  <artifactId>resteasy-spring</artifactId>
+		  <version>3.0.9.Final</version>
+		</dependency>
+        <dependency>
+        
+            <groupId>org.jboss.resteasy</groupId>
+            <artifactId>resteasy-jaxrs</artifactId>
+            <version>3.0.9.Final</version>
+            <!-- filter out unwanted jars -->
+            <exclusions>
+                <exclusion>
+                    <groupId>commons-httpclient</groupId>
+                    <artifactId>commons-httpclient</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>javax.servlet</groupId>
+                    <artifactId>servlet-api</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>javax.xml.bind</groupId>
+                    <artifactId>jaxb-api</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.sun.xml.bind</groupId>
+                    <artifactId>jaxb-impl</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+			<dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>9.3-1102-jdbc4</version>
+        </dependency>	
+        <dependency>
+            <groupId>org.codehaus.jettison</groupId>
+            <artifactId>jettison</artifactId>
+              <version>1.3.2</version>
+        </dependency>
+        <dependency>
+            <groupId>net.sf.json-lib</groupId>
+            <artifactId>json-lib</artifactId>
+              <version>2.3</version>
+              <classifier>jdk15</classifier>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.resteasy</groupId>
+            <artifactId>resteasy-jettison-provider</artifactId>
+            <version>3.0.9.Final</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>javax.xml.bind</groupId>
+                    <artifactId>jaxb-api</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.sun.xml.bind</groupId>
+                    <artifactId>jaxb-impl</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>javax.xml.stream</groupId>
+                    <artifactId>stax-api</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+ 				 <dependency>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>spring-core</artifactId>
+                        <version>${spring.version}</version>
+                        <type>pom</type>
+                </dependency>
+                <dependency>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>spring-web</artifactId>
+                        <version>${spring.version}</version>
+                </dependency>
+
+                <dependency>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>spring-oxm</artifactId>
+                        <version>${spring.version}</version>
+                </dependency>
+
+                <dependency>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>spring-tx</artifactId>
+                        <version>${spring.version}</version>
+                </dependency>
+
+                <dependency>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>spring-jdbc</artifactId>
+                        <version>${spring.version}</version>
+                </dependency>
+
+                <dependency>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>spring-webmvc</artifactId>
+                        <version>${spring.version}</version>
+  </dependency>
+
+           
+                <dependency>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>spring-aop</artifactId>
+                        <version>${spring.version}</version>
+                </dependency>
+
+                <dependency>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>spring-context-support</artifactId>
+                        <version>${spring.version}</version>
+                </dependency>
+
+
+
+                <dependency>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>spring-test</artifactId>
+                        <version>${spring.version}</version>
+                </dependency>
+                <!-- springframe end -->
+
+                <!-- mybatis核心包 -->
+                <dependency>
+                        <groupId>org.mybatis</groupId>
+                        <artifactId>mybatis</artifactId>
+                        <version>${mybatis.version}</version>
+                </dependency>
+
+                <!-- mybatis/spring包 -->
+                <dependency>
+                        <groupId>org.mybatis-spring</groupId>
+                        <artifactId>mybatis-spring</artifactId>
+                        <version>1.2.2</version>
+                </dependency>
+
+                <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+         <!-- 阿里巴巴数据源包 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.0.9</version>
+        </dependency>
+	<dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+        </dependency>
+	<dependency>
+  <groupId>org.codehaus.jackson</groupId>
+  <artifactId>jackson-core-asl</artifactId>
+  <version>1.9.3</version>
+</dependency>
+ <dependency>
+  <groupId>org.codehaus.jackson</groupId>
+  <artifactId>jackson-mapper-asl</artifactId>
+  <version>1.9.3</version>
+</dependency>
+</dependencies>
+
+    <!-- this distributionManagement is only here for RESTEasy automated testing of examples build.  You can remove if you are copying this
+         pom.xml as a template -->
+    <distributionManagement>
+        <repository>
+            <id>jboss-releases-repository</id>
+            <name>JBoss Releases Repository</name>
+            <url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
+
+    <build>
+        <finalName>selflife</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.mortbay.jetty</groupId>
+                <artifactId>maven-jetty-plugin</artifactId>
+                <version>6.1.15</version>
+                <configuration>
+                    <!-- By default the artifactId is taken, override it with something simple -->
+                    <contextPath>/</contextPath>
+                    <scanIntervalSeconds>2</scanIntervalSeconds>
+                    <connectors>
+                        <connector
+                                implementation="org.mortbay.jetty.nio.SelectChannelConnector">
+                            <port>9095</port>
+                            <maxIdleTime>60000</maxIdleTime>
+                        </connector>
+                    </connectors>
+                    <systemProperties>
+                        <systemProperty>
+                            <name>log4j.configuration</name>
+                            <value>
+                                file:./src/test/resources/conf/log4j.properties
+                            </value>
+                        </systemProperty>
+                    </systemProperties>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+            <!--plugin> 
+            <groupId>com.ofbizian</groupId> 
+            <artifactId>docker-maven-plugin</artifactId> 
+            <version>1.0.0</version> 
+            <configuration> 
+                <images> 
+                    <image> 
+                        <name>dockerfile/redis</name> 
+                        <hostConfig> 
+                            <![CDATA[ 
+                                { 
+                                    "PortBindings": { 
+                                        "6379/tcp": [ 
+                                            { 
+                                                "HostIp": "0.0.0.0", 
+                                                "HostPort": "6379" 
+                                            } 
+                                        ] 
+                                    } 
+                                } 
+                        ]]> 
+                        </hostConfig> 
+                    </image> 
+                </images> 
+            </configuration> 
+            <executions> 
+                <execution> 
+                    <id>start-docker</id> 
+                    <phase>pre-integration-test</phase> 
+                    <goals> 
+                        <goal>start</goal> 
+                    </goals> 
+                </execution> 
+                <execution> 
+                    <id>stop-docker</id> 
+                    <phase>post-integration-test</phase> 
+                    <goals> 
+                        <goal>stop</goal> 
+                    </goals> 
+                </execution> 
+            </executions> 
+        </plugin--> 
+        </plugins>
+    </build>
+</project>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.selflife.dao.UpdateCommand">
+            
+<update id="updateCommand" parameterType="Command">  
+			      update bd_command_dt  c
+			      <set>                    
+		            ec_command_title=#{ec_command_title},
+		         	ec_command_shell=#{ec_command_shell},
+		         	ec_cattag_code=#{ec_cattag_code}
+		        	</set>
+		        where c.ec_command_id=#{ec_command_id}
+</update>          
+</mapper>

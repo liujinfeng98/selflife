@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.selflife.dao.QueryCommand">
+               		<cache type="org.mybatis.caches.memcached.LoggingMemcachedCache" />
+            
+<select id="queryCommand" parameterType="Command" resultType="Command">  
+			      select  ec_command_id,ec_command_title,ec_command_shell,ec_cattag_code 
+			      
+			      from bd_command_dt  c
+		        	
+		        where c.ec_command_id=#{ec_command_id}
+</select>          
+</mapper>

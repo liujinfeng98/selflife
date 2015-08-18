@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.selflife.dao.QueryCommandAll">
+         <cache type="org.mybatis.caches.memcached.LoggingMemcachedCache" />
+            
+			<select id="queryCommandAll"  resultMap="queryAllCommand">  
+						      select  ec_command_id,ec_command_title,ec_cattag_code 
+						     		 from bd_command_dt  c
+			</select>  
+			<resultMap type="Command" id="queryAllCommand">
+				<id property="ec_command_id" column="ec_command_id"/>
+				<result property="ec_command_title" column="ec_command_title"/>
+				<result property="ec_cattag_code" column="ec_cattag_code"/>
+			</resultMap>   
+			<select id="queryCommandAllByTime"  resultMap="queryAllCommandByTime">  
+						     SELECT  to_char(ec_command_time,'yyyy-mm') as time,
+						     count(distinct ec_command_id) as num
+  					FROM bd_command_dt t, bd_techcat_dt c 
+			 				 where t.ec_cattag_code=c.ec_cattag_code 
+			 				 and ec_cattag_status=0 group by time
+			</select>  
+			<resultMap type="Statics" id="queryAllCommandByTime">
+				<result property="name" column="time"/>
+				<result property="count" column="num"/>
+			</resultMap>        
+			<resultMap type="Statics" id="queryAllCommandByTag">
+				<result property="name" column="time"/>
+				<result property="count" column="num"/>
+								<result property="code" column="code"/>
+				
+			</resultMap> 
+			<select id="queryCommandAllByCattag"  resultMap="queryAllCommandByTag">  
+						SELECT  distinct t.ec_cattag_code as code,count(distinct ec_command_id) as num,
+						c.ec_cattag_name as name
+			 	 FROM bd_command_dt t, bd_techcat_dt c 
+			 				 where t.ec_cattag_code=c.ec_cattag_code and ec_cattag_status=0
+			 	 group by code ,name order by code
+			</select>       
+</mapper>
