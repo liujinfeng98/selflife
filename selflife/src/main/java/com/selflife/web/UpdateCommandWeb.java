@@ -33,6 +33,7 @@ public class UpdateCommandWeb {
 
 	@Autowired
 	private QueryCommandService qcos;
+	
 	@Autowired
 	private UpdateCommandService ucs;
 	@Autowired
@@ -43,6 +44,9 @@ public class UpdateCommandWeb {
 	@Autowired
 	private Command c; 
 	
+	@Autowired
+	private com.selflife.model.User u;
+	
 	@POST
 	@Path("/updateCommand")
 	@Consumes(MediaType.APPLICATION_FORM_URLENCODED)
@@ -52,6 +56,7 @@ public class UpdateCommandWeb {
 		if(!m.isEmpty()){
 			m.clear();
 		}
+		
 		if(!RegexUtil.checkScope(_commandid,1,999999999)||!RegexUtil.checkScope(_code,1,999999999)||!RegexUtil.isNotNull(_title)){
 			m.put("_ret", Integer.valueOf("400"));
 		}else{
@@ -81,13 +86,17 @@ public class UpdateCommandWeb {
 	public ModelAndView toCommandUpdate(@PathParam("commandid") String commandid){
 		if(!m.isEmpty()){
 			m.clear();
-		}		
+		}
+		if(u.getEc_username()==null){
+			return  new ModelAndView("loginPage");
+		}
 		c.setEc_command_id(Integer.parseInt(commandid));
 		try {
 			c = qcos.queryCommand(c);
 			List<CatTag> cts=qcs.queryCatTagAllSelect();
 			m.put("cattags", cts);
 			m.put("command",c);
+			System.out.println("aaaaaaaa1");
 
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

@@ -15,7 +15,6 @@
       <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->	
-	<link rel="shortcut icon" href="Images/icon.png">
 	<style type="text/css">
 	@media screen and (max-width: 1140px) {
 	 #xinlang {
@@ -37,22 +36,28 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button> 
-		<a class="navbar-brand" href="index.html" >Selflife</a>
+		<a class="navbar-brand" href="/queryCommand/queryStaticsesByCatTag" >Selflife</a>
     </div>
 	 <div class="collapse navbar-collapse" id="navbar">
 	 <ul class="nav navbar-nav">
            
-           <li><a href="index.html">首页</a></li>
+           <li><a href="/queryCommand/queryStaticsesByCatTag">首页</a></li>
         <li><a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">博客<b class="caret"></b></a>		
 		 <ul class="dropdown-menu">
                 <li>
-                  <a href="#" >标签</a>
+                  <a href="/queryCommand/queryStaticsesByCatTag">标签</a>
                 </li>
                 <li>
-                  <a href="#" >时间</a>
+                  <a href="/queryCommand/queryStaticsesByTime" >时间</a>
                 </li>
                  <li>
-                  <a href="/queryCommand/toCommandAdd"  >添加</a>
+                  <a href="/queryCommand/toCommandAdd">添加</a>
+                </li>
+                <li>
+                  <a href="/queryCommand/toAddCatTag">添加标签</a>
+                </li>
+                <li>
+                  <a href="/queryCommand/cattagsList">标签列表</a>
                 </li>
               </ul>
 			  </li>
@@ -61,7 +66,7 @@
           </ul>
       <ul class="nav navbar-nav navbar-right">
         
-		<li><a href="english/index.html">English</a></li>
+		<li><a href="/loginPage">注销</a></li>
       </ul>    
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container -->

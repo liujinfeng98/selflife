@@ -1,6 +1,5 @@
 <%@ page isELIgnored="false" pageEncoding="utf-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-
 <!DOCTYPE html>
 <html lang="utf-8">
   <head>
@@ -38,22 +37,28 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button> 
-		<a class="navbar-brand" href="index.html" >Selflife</a>
+			<a class="navbar-brand" href="/queryCommand/queryStaticsesByCatTag" >Selflife</a>
     </div>
 	 <div class="collapse navbar-collapse" id="navbar">
 	 <ul class="nav navbar-nav">
            
-           <li><a href="index.html">首页</a></li>
+           <li><a href="/queryCommand/queryStaticsesByCatTag">首页</a></li>
         <li><a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">博客<b class="caret"></b></a>		
 		 <ul class="dropdown-menu">
                 <li>
-                  <a href="#" target="_blank" onclick="">标签</a>
+                  <a href="/queryCommand/queryStaticsesByCatTag">标签</a>
                 </li>
                 <li>
-                  <a href="#" target="_blank" onclick="">时间</a>
+                  <a href="/queryCommand/queryStaticsesByTime" >时间</a>
                 </li>
                  <li>
-                  <a href="" target="_blank" onclick="">添加</a>
+                  <a href="/queryCommand/toCommandAdd">添加</a>
+                </li>
+                <li>
+                  <a href="/queryCommand/toAddCatTag">添加标签</a>
+                </li>
+                 <li>
+                  <a href="/queryCommand/cattagsList">标签列表</a>
                 </li>
               </ul>
 			  </li>
@@ -62,33 +67,34 @@
           </ul>
       <ul class="nav navbar-nav navbar-right">
         
-		<li><a href="english/index.html">English</a></li>
-      </ul>    
+		<li><a href="/loginPage">注销</a></li>
+      </ul> 
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container -->
 </nav>
 <div class="jumbotron jumbotron_custom">
   <div class="container">
-  		<form action="addcommand" id="loginform" name="loginform" method="post">
-	<div class="panel panel-primary" style="height:400px;">
+  		<form action="/queryCommand/addcommand" id="loginform" name="loginform" method="post">
+	<div class="panel panel-primary" >
 	<div style="color:red;">
 	
 	</div>
-	<div class="input-group"style="margin:0 auto ;text-align:center;width:90%;margin-top:100px;">
+	<div class="input-group"style="margin:0 auto ;text-align:center;width:90%;margin-top:10px;">
 	  <span class="input-group-addon" id="basic-addon1">标题：</span>
 	  <input type="text" id="_title" name="_title" class="form-control" placeholder="请输入标题" aria-describedby="basic-addon1">
 	</div>
-<div style="margin:0 auto ;text-align:center;width:90%;margin-top:100px;">
-  <span  id="basic-addon1">标签：</span>
-  <select id="_code" name="_code">
+<div style="margin:0 auto ;text-align:center;width:90%;margin-top:10px;">
+ <span class="input-group-addon" style="float:left;width:68px;height:30px;" id="basic-addon1">标签：</span>
+  <span style="display:inline;"><select id="_code" name="_code">
   	  <c:forEach var="cattag1" items="${hashmap.cattags}">
  			<option value="${cattag1.code}">${cattag1.name}</option>
   		</c:forEach>  	
-  </select>
+  </select></span>
 </div>
 <div style="margin:0 auto;margin-top:10px;align:center;width:90%;">
-  <span class="input-group-addon" id="basic-addon1">内容：</span>
-  <textarea type="textarea" id="_shell" name="_shell" class="form-control" placeholder="内容" height="60">
+   <span class="input-group-addon" id="basic-addon1" style="text-align:left;">内容：</span>
+  <span><textarea type="textarea" id="_shell" name="_shell" class="form-control" rows="20"></textarea>
+	</span>
 </div>
 <div style="margin:0 auto;margin-top:10px;text-align:center;width:80%;">
   
@@ -147,8 +153,8 @@
 		
 	});
 	$("#resetBtn").click(function(){
-		$("#title").val("");
-		$("#content").val("");
+		$("#_title").val("");
+		$("#_shell").val("");
 		
 	});
 </script>

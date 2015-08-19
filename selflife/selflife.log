@@ -18167,3 +18167,303 @@ javax.ws.rs.NotFoundException: Could not find resource for full path: http://loc
 	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:520)
 [2015-08-18 20:30:53,206 1872758926@qtp-291651850-2 org.springframework.web.servlet.PageNotFound] No mapping found for HTTP request with URI [/queryCommand/znyd.html] in DispatcherServlet with name 'springmvc'
 [2015-08-18 20:38:36,380 Shutdown org.springframework.web.context.support.XmlWebApplicationContext] Closing WebApplicationContext for namespace 'springmvc-servlet': startup date [Tue Aug 18 19:51:16 CST 2015]; parent: Root WebApplicationContext
+[2015-08-19 20:55:17,447 main org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@30a3107a: startup date [Wed Aug 19 20:55:17 CST 2015]; root of context hierarchy
+[2015-08-19 20:55:17,526 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring.xml]
+[2015-08-19 20:55:17,961 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring-mybatis.xml]
+[2015-08-19 20:55:18,385 main org.springframework.context.support.PropertySourcesPlaceholderConfigurer] Loading properties file from class path resource [conf/db.properties]
+[2015-08-19 20:55:18,667 main com.alibaba.druid.pool.DruidAbstractDataSource] maxIdle is deprecated
+[2015-08-19 20:55:18,836 main com.alibaba.druid.pool.DruidDataSource] testWhileIdle is true, validationQuery not set
+[2015-08-19 20:55:19,011 main com.alibaba.druid.pool.DruidDataSource] {dataSource-1} inited
+[2015-08-19 20:55:20,285 main org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1e8b7643: startup date [Wed Aug 19 20:55:20 CST 2015]; root of context hierarchy
+[2015-08-19 20:55:20,289 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring.xml]
+[2015-08-19 20:55:20,427 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring-mybatis.xml]
+[2015-08-19 20:55:20,574 main org.springframework.context.support.PropertySourcesPlaceholderConfigurer] Loading properties file from class path resource [conf/db.properties]
+[2015-08-19 20:55:20,619 main com.alibaba.druid.pool.DruidAbstractDataSource] maxIdle is deprecated
+[2015-08-19 20:55:20,624 main com.alibaba.druid.pool.DruidDataSource] testWhileIdle is true, validationQuery not set
+[2015-08-19 20:55:20,642 main com.alibaba.druid.pool.DruidDataSource] {dataSource-2} inited
+[2015-08-19 20:55:21,029 main org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27eedb64: startup date [Wed Aug 19 20:55:21 CST 2015]; root of context hierarchy
+[2015-08-19 20:55:21,030 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring.xml]
+[2015-08-19 20:55:21,133 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring-mybatis.xml]
+[2015-08-19 20:55:21,278 main org.springframework.context.support.PropertySourcesPlaceholderConfigurer] Loading properties file from class path resource [conf/db.properties]
+[2015-08-19 20:55:21,300 main com.alibaba.druid.pool.DruidAbstractDataSource] maxIdle is deprecated
+[2015-08-19 20:55:21,305 main com.alibaba.druid.pool.DruidDataSource] testWhileIdle is true, validationQuery not set
+[2015-08-19 20:55:21,368 main com.alibaba.druid.pool.DruidDataSource] {dataSource-3} inited
+[2015-08-19 20:55:21,728 main org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@8dbfffb: startup date [Wed Aug 19 20:55:21 CST 2015]; root of context hierarchy
+[2015-08-19 20:55:21,730 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring.xml]
+[2015-08-19 20:55:21,851 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring-mybatis.xml]
+[2015-08-19 20:55:21,974 main org.springframework.context.support.PropertySourcesPlaceholderConfigurer] Loading properties file from class path resource [conf/db.properties]
+[2015-08-19 20:55:22,011 main com.alibaba.druid.pool.DruidAbstractDataSource] maxIdle is deprecated
+[2015-08-19 20:55:22,018 main com.alibaba.druid.pool.DruidDataSource] testWhileIdle is true, validationQuery not set
+[2015-08-19 20:55:22,099 main com.alibaba.druid.pool.DruidDataSource] {dataSource-4} inited
+[2015-08-19 20:55:22,381 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+[2015-08-19 20:55:22,479 main org.springframework.jdbc.support.SQLErrorCodesFactory] SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+[2015-08-19 20:55:22,529 main org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1338fb5: startup date [Wed Aug 19 20:55:22 CST 2015]; root of context hierarchy
+[2015-08-19 20:55:22,530 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring.xml]
+[2015-08-19 20:55:22,640 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring-mybatis.xml]
+[2015-08-19 20:55:22,727 main org.springframework.context.support.PropertySourcesPlaceholderConfigurer] Loading properties file from class path resource [conf/db.properties]
+[2015-08-19 20:55:22,749 main com.alibaba.druid.pool.DruidAbstractDataSource] maxIdle is deprecated
+[2015-08-19 20:55:22,751 main com.alibaba.druid.pool.DruidDataSource] testWhileIdle is true, validationQuery not set
+[2015-08-19 20:55:22,768 main com.alibaba.druid.pool.DruidDataSource] {dataSource-5} inited
+[2015-08-19 20:55:23,016 main org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@710b18a6: startup date [Wed Aug 19 20:55:23 CST 2015]; root of context hierarchy
+[2015-08-19 20:55:23,017 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring.xml]
+[2015-08-19 20:55:23,111 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring-mybatis.xml]
+[2015-08-19 20:55:23,199 main org.springframework.context.support.PropertySourcesPlaceholderConfigurer] Loading properties file from class path resource [conf/db.properties]
+[2015-08-19 20:55:23,231 main com.alibaba.druid.pool.DruidAbstractDataSource] maxIdle is deprecated
+[2015-08-19 20:55:23,236 main com.alibaba.druid.pool.DruidDataSource] testWhileIdle is true, validationQuery not set
+[2015-08-19 20:55:23,247 main com.alibaba.druid.pool.DruidDataSource] {dataSource-6} inited
+[2015-08-19 20:55:23,470 main org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@20f12539: startup date [Wed Aug 19 20:55:23 CST 2015]; root of context hierarchy
+[2015-08-19 20:55:23,471 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring.xml]
+[2015-08-19 20:55:23,610 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring-mybatis.xml]
+[2015-08-19 20:55:23,664 main org.springframework.context.support.PropertySourcesPlaceholderConfigurer] Loading properties file from class path resource [conf/db.properties]
+[2015-08-19 20:55:23,702 main com.alibaba.druid.pool.DruidAbstractDataSource] maxIdle is deprecated
+[2015-08-19 20:55:23,715 main com.alibaba.druid.pool.DruidDataSource] testWhileIdle is true, validationQuery not set
+[2015-08-19 20:55:23,747 main com.alibaba.druid.pool.DruidDataSource] {dataSource-7} inited
+[2015-08-19 20:55:23,983 main org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@d8305c2: startup date [Wed Aug 19 20:55:23 CST 2015]; root of context hierarchy
+[2015-08-19 20:55:23,989 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring.xml]
+[2015-08-19 20:55:24,115 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring-mybatis.xml]
+[2015-08-19 20:55:24,199 main org.springframework.context.support.PropertySourcesPlaceholderConfigurer] Loading properties file from class path resource [conf/db.properties]
+[2015-08-19 20:55:24,215 main com.alibaba.druid.pool.DruidAbstractDataSource] maxIdle is deprecated
+[2015-08-19 20:55:24,217 main com.alibaba.druid.pool.DruidDataSource] testWhileIdle is true, validationQuery not set
+[2015-08-19 20:55:24,274 main com.alibaba.druid.pool.DruidDataSource] {dataSource-8} inited
+[2015-08-19 20:55:58,177 main org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3891771e: startup date [Wed Aug 19 20:55:58 CST 2015]; root of context hierarchy
+[2015-08-19 20:55:58,256 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring.xml]
+[2015-08-19 20:55:58,641 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring-mybatis.xml]
+[2015-08-19 20:55:59,010 main org.springframework.context.support.PropertySourcesPlaceholderConfigurer] Loading properties file from class path resource [conf/db.properties]
+[2015-08-19 20:55:59,338 main com.alibaba.druid.pool.DruidAbstractDataSource] maxIdle is deprecated
+[2015-08-19 20:55:59,604 main com.alibaba.druid.pool.DruidDataSource] testWhileIdle is true, validationQuery not set
+[2015-08-19 20:55:59,736 main com.alibaba.druid.pool.DruidDataSource] {dataSource-1} inited
+[2015-08-19 20:56:00,970 main org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6ccdb29f: startup date [Wed Aug 19 20:56:00 CST 2015]; root of context hierarchy
+[2015-08-19 20:56:00,972 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring.xml]
+[2015-08-19 20:56:01,082 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring-mybatis.xml]
+[2015-08-19 20:56:01,212 main org.springframework.context.support.PropertySourcesPlaceholderConfigurer] Loading properties file from class path resource [conf/db.properties]
+[2015-08-19 20:56:01,258 main com.alibaba.druid.pool.DruidAbstractDataSource] maxIdle is deprecated
+[2015-08-19 20:56:01,263 main com.alibaba.druid.pool.DruidDataSource] testWhileIdle is true, validationQuery not set
+[2015-08-19 20:56:01,296 main com.alibaba.druid.pool.DruidDataSource] {dataSource-2} inited
+[2015-08-19 20:56:01,750 main org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@403f0a22: startup date [Wed Aug 19 20:56:01 CST 2015]; root of context hierarchy
+[2015-08-19 20:56:01,754 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring.xml]
+[2015-08-19 20:56:01,913 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring-mybatis.xml]
+[2015-08-19 20:56:02,049 main org.springframework.context.support.PropertySourcesPlaceholderConfigurer] Loading properties file from class path resource [conf/db.properties]
+[2015-08-19 20:56:02,067 main com.alibaba.druid.pool.DruidAbstractDataSource] maxIdle is deprecated
+[2015-08-19 20:56:02,069 main com.alibaba.druid.pool.DruidDataSource] testWhileIdle is true, validationQuery not set
+[2015-08-19 20:56:02,100 main com.alibaba.druid.pool.DruidDataSource] {dataSource-3} inited
+[2015-08-19 20:56:02,431 main org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@f80945f: startup date [Wed Aug 19 20:56:02 CST 2015]; root of context hierarchy
+[2015-08-19 20:56:02,453 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring.xml]
+[2015-08-19 20:56:02,591 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring-mybatis.xml]
+[2015-08-19 20:56:02,693 main org.springframework.context.support.PropertySourcesPlaceholderConfigurer] Loading properties file from class path resource [conf/db.properties]
+[2015-08-19 20:56:02,727 main com.alibaba.druid.pool.DruidAbstractDataSource] maxIdle is deprecated
+[2015-08-19 20:56:02,732 main com.alibaba.druid.pool.DruidDataSource] testWhileIdle is true, validationQuery not set
+[2015-08-19 20:56:02,761 main com.alibaba.druid.pool.DruidDataSource] {dataSource-4} inited
+[2015-08-19 20:56:03,056 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+[2015-08-19 20:56:03,167 main org.springframework.jdbc.support.SQLErrorCodesFactory] SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+[2015-08-19 20:56:03,210 main org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3cc41abc: startup date [Wed Aug 19 20:56:03 CST 2015]; root of context hierarchy
+[2015-08-19 20:56:03,213 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring.xml]
+[2015-08-19 20:56:03,342 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring-mybatis.xml]
+[2015-08-19 20:56:03,460 main org.springframework.context.support.PropertySourcesPlaceholderConfigurer] Loading properties file from class path resource [conf/db.properties]
+[2015-08-19 20:56:03,496 main com.alibaba.druid.pool.DruidAbstractDataSource] maxIdle is deprecated
+[2015-08-19 20:56:03,498 main com.alibaba.druid.pool.DruidDataSource] testWhileIdle is true, validationQuery not set
+[2015-08-19 20:56:03,515 main com.alibaba.druid.pool.DruidDataSource] {dataSource-5} inited
+[2015-08-19 20:56:03,795 main org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@33aeca0b: startup date [Wed Aug 19 20:56:03 CST 2015]; root of context hierarchy
+[2015-08-19 20:56:03,796 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring.xml]
+[2015-08-19 20:56:03,940 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring-mybatis.xml]
+[2015-08-19 20:56:04,044 main org.springframework.context.support.PropertySourcesPlaceholderConfigurer] Loading properties file from class path resource [conf/db.properties]
+[2015-08-19 20:56:04,055 main com.alibaba.druid.pool.DruidAbstractDataSource] maxIdle is deprecated
+[2015-08-19 20:56:04,056 main com.alibaba.druid.pool.DruidDataSource] testWhileIdle is true, validationQuery not set
+[2015-08-19 20:56:04,124 main com.alibaba.druid.pool.DruidDataSource] {dataSource-6} inited
+[2015-08-19 20:56:04,395 main org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@75e91545: startup date [Wed Aug 19 20:56:04 CST 2015]; root of context hierarchy
+[2015-08-19 20:56:04,397 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring.xml]
+[2015-08-19 20:56:04,499 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring-mybatis.xml]
+[2015-08-19 20:56:04,614 main org.springframework.context.support.PropertySourcesPlaceholderConfigurer] Loading properties file from class path resource [conf/db.properties]
+[2015-08-19 20:56:04,641 main com.alibaba.druid.pool.DruidAbstractDataSource] maxIdle is deprecated
+[2015-08-19 20:56:04,647 main com.alibaba.druid.pool.DruidDataSource] testWhileIdle is true, validationQuery not set
+[2015-08-19 20:56:04,658 main com.alibaba.druid.pool.DruidDataSource] {dataSource-7} inited
+[2015-08-19 20:56:04,923 main org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@150ab4ed: startup date [Wed Aug 19 20:56:04 CST 2015]; root of context hierarchy
+[2015-08-19 20:56:04,925 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring.xml]
+[2015-08-19 20:56:04,982 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring-mybatis.xml]
+[2015-08-19 20:56:05,068 main org.springframework.context.support.PropertySourcesPlaceholderConfigurer] Loading properties file from class path resource [conf/db.properties]
+[2015-08-19 20:56:05,111 main com.alibaba.druid.pool.DruidAbstractDataSource] maxIdle is deprecated
+[2015-08-19 20:56:05,113 main com.alibaba.druid.pool.DruidDataSource] testWhileIdle is true, validationQuery not set
+[2015-08-19 20:56:05,174 main com.alibaba.druid.pool.DruidDataSource] {dataSource-8} inited
+[2015-08-19 20:58:49,998 main org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@30a3107a: startup date [Wed Aug 19 20:58:49 CST 2015]; root of context hierarchy
+[2015-08-19 20:58:50,092 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring.xml]
+[2015-08-19 20:58:50,472 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring-mybatis.xml]
+[2015-08-19 20:58:50,889 main org.springframework.context.support.PropertySourcesPlaceholderConfigurer] Loading properties file from class path resource [conf/db.properties]
+[2015-08-19 20:58:51,176 main com.alibaba.druid.pool.DruidAbstractDataSource] maxIdle is deprecated
+[2015-08-19 20:58:51,338 main com.alibaba.druid.pool.DruidDataSource] testWhileIdle is true, validationQuery not set
+[2015-08-19 20:58:51,517 main com.alibaba.druid.pool.DruidDataSource] {dataSource-1} inited
+[2015-08-19 20:58:52,808 main org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1e8b7643: startup date [Wed Aug 19 20:58:52 CST 2015]; root of context hierarchy
+[2015-08-19 20:58:52,809 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring.xml]
+[2015-08-19 20:58:52,918 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring-mybatis.xml]
+[2015-08-19 20:58:53,001 main org.springframework.context.support.PropertySourcesPlaceholderConfigurer] Loading properties file from class path resource [conf/db.properties]
+[2015-08-19 20:58:53,038 main com.alibaba.druid.pool.DruidAbstractDataSource] maxIdle is deprecated
+[2015-08-19 20:58:53,052 main com.alibaba.druid.pool.DruidDataSource] testWhileIdle is true, validationQuery not set
+[2015-08-19 20:58:53,101 main com.alibaba.druid.pool.DruidDataSource] {dataSource-2} inited
+[2015-08-19 20:58:53,489 main org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27eedb64: startup date [Wed Aug 19 20:58:53 CST 2015]; root of context hierarchy
+[2015-08-19 20:58:53,490 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring.xml]
+[2015-08-19 20:58:53,619 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring-mybatis.xml]
+[2015-08-19 20:58:53,749 main org.springframework.context.support.PropertySourcesPlaceholderConfigurer] Loading properties file from class path resource [conf/db.properties]
+[2015-08-19 20:58:53,780 main com.alibaba.druid.pool.DruidAbstractDataSource] maxIdle is deprecated
+[2015-08-19 20:58:53,783 main com.alibaba.druid.pool.DruidDataSource] testWhileIdle is true, validationQuery not set
+[2015-08-19 20:58:53,810 main com.alibaba.druid.pool.DruidDataSource] {dataSource-3} inited
+[2015-08-19 20:58:54,072 main org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@8dbfffb: startup date [Wed Aug 19 20:58:54 CST 2015]; root of context hierarchy
+[2015-08-19 20:58:54,074 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring.xml]
+[2015-08-19 20:58:54,199 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring-mybatis.xml]
+[2015-08-19 20:58:54,311 main org.springframework.context.support.PropertySourcesPlaceholderConfigurer] Loading properties file from class path resource [conf/db.properties]
+[2015-08-19 20:58:54,347 main com.alibaba.druid.pool.DruidAbstractDataSource] maxIdle is deprecated
+[2015-08-19 20:58:54,357 main com.alibaba.druid.pool.DruidDataSource] testWhileIdle is true, validationQuery not set
+[2015-08-19 20:58:54,409 main com.alibaba.druid.pool.DruidDataSource] {dataSource-4} inited
+[2015-08-19 20:58:54,711 main org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@23aa363a: startup date [Wed Aug 19 20:58:54 CST 2015]; root of context hierarchy
+[2015-08-19 20:58:54,712 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring.xml]
+[2015-08-19 20:58:54,806 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring-mybatis.xml]
+[2015-08-19 20:58:54,916 main org.springframework.context.support.PropertySourcesPlaceholderConfigurer] Loading properties file from class path resource [conf/db.properties]
+[2015-08-19 20:58:54,940 main com.alibaba.druid.pool.DruidAbstractDataSource] maxIdle is deprecated
+[2015-08-19 20:58:54,952 main com.alibaba.druid.pool.DruidDataSource] testWhileIdle is true, validationQuery not set
+[2015-08-19 20:58:54,985 main com.alibaba.druid.pool.DruidDataSource] {dataSource-5} inited
+[2015-08-19 20:58:55,225 main org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7cbc3762: startup date [Wed Aug 19 20:58:55 CST 2015]; root of context hierarchy
+[2015-08-19 20:58:55,227 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring.xml]
+[2015-08-19 20:58:55,323 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring-mybatis.xml]
+[2015-08-19 20:58:55,394 main org.springframework.context.support.PropertySourcesPlaceholderConfigurer] Loading properties file from class path resource [conf/db.properties]
+[2015-08-19 20:58:55,429 main com.alibaba.druid.pool.DruidAbstractDataSource] maxIdle is deprecated
+[2015-08-19 20:58:55,433 main com.alibaba.druid.pool.DruidDataSource] testWhileIdle is true, validationQuery not set
+[2015-08-19 20:58:55,463 main com.alibaba.druid.pool.DruidDataSource] {dataSource-6} inited
+[2015-08-19 20:58:55,763 main org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@14d14731: startup date [Wed Aug 19 20:58:55 CST 2015]; root of context hierarchy
+[2015-08-19 20:58:55,764 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring.xml]
+[2015-08-19 20:58:55,799 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring-mybatis.xml]
+[2015-08-19 20:58:55,873 main org.springframework.context.support.PropertySourcesPlaceholderConfigurer] Loading properties file from class path resource [conf/db.properties]
+[2015-08-19 20:58:55,892 main com.alibaba.druid.pool.DruidAbstractDataSource] maxIdle is deprecated
+[2015-08-19 20:58:55,893 main com.alibaba.druid.pool.DruidDataSource] testWhileIdle is true, validationQuery not set
+[2015-08-19 20:58:55,908 main com.alibaba.druid.pool.DruidDataSource] {dataSource-7} inited
+[2015-08-19 20:58:56,174 main org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5dd91bca: startup date [Wed Aug 19 20:58:56 CST 2015]; root of context hierarchy
+[2015-08-19 20:58:56,179 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring.xml]
+[2015-08-19 20:58:56,244 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring-mybatis.xml]
+[2015-08-19 20:58:56,337 main org.springframework.context.support.PropertySourcesPlaceholderConfigurer] Loading properties file from class path resource [conf/db.properties]
+[2015-08-19 20:58:56,367 main com.alibaba.druid.pool.DruidAbstractDataSource] maxIdle is deprecated
+[2015-08-19 20:58:56,373 main com.alibaba.druid.pool.DruidDataSource] testWhileIdle is true, validationQuery not set
+[2015-08-19 20:58:56,438 main com.alibaba.druid.pool.DruidDataSource] {dataSource-8} inited
+[2015-08-19 21:46:44,660 main org.apache.http.impl.client.DefaultHttpClient] I/O exception (java.net.SocketException) caught when connecting to the target host: 网络不可达
+[2015-08-19 21:46:44,684 main org.apache.http.impl.client.DefaultHttpClient] Retrying connect
+[2015-08-19 21:46:44,685 main org.apache.http.impl.client.DefaultHttpClient] I/O exception (java.net.SocketException) caught when connecting to the target host: 网络不可达
+[2015-08-19 21:46:44,686 main org.apache.http.impl.client.DefaultHttpClient] Retrying connect
+[2015-08-19 21:46:44,687 main org.apache.http.impl.client.DefaultHttpClient] I/O exception (java.net.SocketException) caught when connecting to the target host: 网络不可达
+[2015-08-19 21:46:44,688 main org.apache.http.impl.client.DefaultHttpClient] Retrying connect
+[2015-08-19 21:46:44,844 main org.apache.http.impl.client.DefaultHttpClient] I/O exception (java.net.SocketException) caught when connecting to the target host: 网络不可达
+[2015-08-19 21:46:44,845 main org.apache.http.impl.client.DefaultHttpClient] Retrying connect
+[2015-08-19 21:46:44,847 main org.apache.http.impl.client.DefaultHttpClient] I/O exception (java.net.SocketException) caught when connecting to the target host: 网络不可达
+[2015-08-19 21:46:44,847 main org.apache.http.impl.client.DefaultHttpClient] Retrying connect
+[2015-08-19 21:46:44,848 main org.apache.http.impl.client.DefaultHttpClient] I/O exception (java.net.SocketException) caught when connecting to the target host: 网络不可达
+[2015-08-19 21:46:44,859 main org.apache.http.impl.client.DefaultHttpClient] Retrying connect
+[2015-08-19 21:46:45,107 main org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1563da5: startup date [Wed Aug 19 21:46:45 CST 2015]; root of context hierarchy
+[2015-08-19 21:46:45,182 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring.xml]
+[2015-08-19 21:46:45,602 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring-mybatis.xml]
+[2015-08-19 21:46:45,989 main org.springframework.context.support.PropertySourcesPlaceholderConfigurer] Loading properties file from class path resource [conf/db.properties]
+[2015-08-19 21:46:46,280 main com.alibaba.druid.pool.DruidAbstractDataSource] maxIdle is deprecated
+[2015-08-19 21:46:46,467 main com.alibaba.druid.pool.DruidDataSource] testWhileIdle is true, validationQuery not set
+[2015-08-19 21:46:46,659 main com.alibaba.druid.pool.DruidDataSource] {dataSource-1} inited
+[2015-08-19 21:46:47,951 main org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@50de186c: startup date [Wed Aug 19 21:46:47 CST 2015]; root of context hierarchy
+[2015-08-19 21:46:47,953 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring.xml]
+[2015-08-19 21:46:48,081 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring-mybatis.xml]
+[2015-08-19 21:46:48,249 main org.springframework.context.support.PropertySourcesPlaceholderConfigurer] Loading properties file from class path resource [conf/db.properties]
+[2015-08-19 21:46:48,295 main com.alibaba.druid.pool.DruidAbstractDataSource] maxIdle is deprecated
+[2015-08-19 21:46:48,296 main com.alibaba.druid.pool.DruidDataSource] testWhileIdle is true, validationQuery not set
+[2015-08-19 21:46:48,309 main com.alibaba.druid.pool.DruidDataSource] {dataSource-2} inited
+[2015-08-19 21:46:48,767 main org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@466276d8: startup date [Wed Aug 19 21:46:48 CST 2015]; root of context hierarchy
+[2015-08-19 21:46:48,773 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring.xml]
+[2015-08-19 21:46:48,914 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring-mybatis.xml]
+[2015-08-19 21:46:49,060 main org.springframework.context.support.PropertySourcesPlaceholderConfigurer] Loading properties file from class path resource [conf/db.properties]
+[2015-08-19 21:46:49,074 main com.alibaba.druid.pool.DruidAbstractDataSource] maxIdle is deprecated
+[2015-08-19 21:46:49,076 main com.alibaba.druid.pool.DruidDataSource] testWhileIdle is true, validationQuery not set
+[2015-08-19 21:46:49,085 main com.alibaba.druid.pool.DruidDataSource] {dataSource-3} inited
+[2015-08-19 21:46:49,343 main org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@331acdad: startup date [Wed Aug 19 21:46:49 CST 2015]; root of context hierarchy
+[2015-08-19 21:46:49,345 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring.xml]
+[2015-08-19 21:46:49,498 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring-mybatis.xml]
+[2015-08-19 21:46:49,552 main org.springframework.context.support.PropertySourcesPlaceholderConfigurer] Loading properties file from class path resource [conf/db.properties]
+[2015-08-19 21:46:49,583 main com.alibaba.druid.pool.DruidAbstractDataSource] maxIdle is deprecated
+[2015-08-19 21:46:49,584 main com.alibaba.druid.pool.DruidDataSource] testWhileIdle is true, validationQuery not set
+[2015-08-19 21:46:49,638 main com.alibaba.druid.pool.DruidDataSource] {dataSource-4} inited
+[2015-08-19 21:46:50,044 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+[2015-08-19 21:46:50,138 main org.springframework.jdbc.support.SQLErrorCodesFactory] SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+[2015-08-19 21:46:50,177 main org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6b3e12b5: startup date [Wed Aug 19 21:46:50 CST 2015]; root of context hierarchy
+[2015-08-19 21:46:50,178 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring.xml]
+[2015-08-19 21:46:50,251 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring-mybatis.xml]
+[2015-08-19 21:46:50,335 main org.springframework.context.support.PropertySourcesPlaceholderConfigurer] Loading properties file from class path resource [conf/db.properties]
+[2015-08-19 21:46:50,382 main com.alibaba.druid.pool.DruidAbstractDataSource] maxIdle is deprecated
+[2015-08-19 21:46:50,384 main com.alibaba.druid.pool.DruidDataSource] testWhileIdle is true, validationQuery not set
+[2015-08-19 21:46:50,404 main com.alibaba.druid.pool.DruidDataSource] {dataSource-5} inited
+[2015-08-19 21:46:50,714 main org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2101b44a: startup date [Wed Aug 19 21:46:50 CST 2015]; root of context hierarchy
+[2015-08-19 21:46:50,715 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring.xml]
+[2015-08-19 21:46:50,808 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring-mybatis.xml]
+[2015-08-19 21:46:50,927 main org.springframework.context.support.PropertySourcesPlaceholderConfigurer] Loading properties file from class path resource [conf/db.properties]
+[2015-08-19 21:46:50,942 main com.alibaba.druid.pool.DruidAbstractDataSource] maxIdle is deprecated
+[2015-08-19 21:46:50,943 main com.alibaba.druid.pool.DruidDataSource] testWhileIdle is true, validationQuery not set
+[2015-08-19 21:46:50,957 main com.alibaba.druid.pool.DruidDataSource] {dataSource-6} inited
+[2015-08-19 21:46:51,216 main org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6da00fb9: startup date [Wed Aug 19 21:46:51 CST 2015]; root of context hierarchy
+[2015-08-19 21:46:51,217 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring.xml]
+[2015-08-19 21:46:51,299 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring-mybatis.xml]
+[2015-08-19 21:46:51,401 main org.springframework.context.support.PropertySourcesPlaceholderConfigurer] Loading properties file from class path resource [conf/db.properties]
+[2015-08-19 21:46:51,421 main com.alibaba.druid.pool.DruidAbstractDataSource] maxIdle is deprecated
+[2015-08-19 21:46:51,424 main com.alibaba.druid.pool.DruidDataSource] testWhileIdle is true, validationQuery not set
+[2015-08-19 21:46:51,438 main com.alibaba.druid.pool.DruidDataSource] {dataSource-7} inited
+[2015-08-19 21:46:51,730 main org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@422c3c7a: startup date [Wed Aug 19 21:46:51 CST 2015]; root of context hierarchy
+[2015-08-19 21:46:51,738 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring.xml]
+[2015-08-19 21:46:51,862 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring-mybatis.xml]
+[2015-08-19 21:46:51,979 main org.springframework.context.support.PropertySourcesPlaceholderConfigurer] Loading properties file from class path resource [conf/db.properties]
+[2015-08-19 21:46:52,008 main com.alibaba.druid.pool.DruidAbstractDataSource] maxIdle is deprecated
+[2015-08-19 21:46:52,015 main com.alibaba.druid.pool.DruidDataSource] testWhileIdle is true, validationQuery not set
+[2015-08-19 21:46:52,041 main com.alibaba.druid.pool.DruidDataSource] {dataSource-8} inited
+[2015-08-19 21:47:33,387 main org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3891771e: startup date [Wed Aug 19 21:47:33 CST 2015]; root of context hierarchy
+[2015-08-19 21:47:33,469 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring.xml]
+[2015-08-19 21:47:33,831 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring-mybatis.xml]
+[2015-08-19 21:47:34,203 main org.springframework.context.support.PropertySourcesPlaceholderConfigurer] Loading properties file from class path resource [conf/db.properties]
+[2015-08-19 21:47:34,514 main com.alibaba.druid.pool.DruidAbstractDataSource] maxIdle is deprecated
+[2015-08-19 21:47:34,748 main com.alibaba.druid.pool.DruidDataSource] testWhileIdle is true, validationQuery not set
+[2015-08-19 21:47:34,904 main com.alibaba.druid.pool.DruidDataSource] {dataSource-1} inited
+[2015-08-19 21:47:36,183 main org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6ccdb29f: startup date [Wed Aug 19 21:47:36 CST 2015]; root of context hierarchy
+[2015-08-19 21:47:36,185 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring.xml]
+[2015-08-19 21:47:36,344 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring-mybatis.xml]
+[2015-08-19 21:47:36,481 main org.springframework.context.support.PropertySourcesPlaceholderConfigurer] Loading properties file from class path resource [conf/db.properties]
+[2015-08-19 21:47:36,518 main com.alibaba.druid.pool.DruidAbstractDataSource] maxIdle is deprecated
+[2015-08-19 21:47:36,524 main com.alibaba.druid.pool.DruidDataSource] testWhileIdle is true, validationQuery not set
+[2015-08-19 21:47:36,566 main com.alibaba.druid.pool.DruidDataSource] {dataSource-2} inited
+[2015-08-19 21:47:36,947 main org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@403f0a22: startup date [Wed Aug 19 21:47:36 CST 2015]; root of context hierarchy
+[2015-08-19 21:47:36,952 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring.xml]
+[2015-08-19 21:47:37,090 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring-mybatis.xml]
+[2015-08-19 21:47:37,201 main org.springframework.context.support.PropertySourcesPlaceholderConfigurer] Loading properties file from class path resource [conf/db.properties]
+[2015-08-19 21:47:37,236 main com.alibaba.druid.pool.DruidAbstractDataSource] maxIdle is deprecated
+[2015-08-19 21:47:37,238 main com.alibaba.druid.pool.DruidDataSource] testWhileIdle is true, validationQuery not set
+[2015-08-19 21:47:37,280 main com.alibaba.druid.pool.DruidDataSource] {dataSource-3} inited
+[2015-08-19 21:47:37,567 main org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@f80945f: startup date [Wed Aug 19 21:47:37 CST 2015]; root of context hierarchy
+[2015-08-19 21:47:37,570 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring.xml]
+[2015-08-19 21:47:37,666 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring-mybatis.xml]
+[2015-08-19 21:47:37,766 main org.springframework.context.support.PropertySourcesPlaceholderConfigurer] Loading properties file from class path resource [conf/db.properties]
+[2015-08-19 21:47:37,800 main com.alibaba.druid.pool.DruidAbstractDataSource] maxIdle is deprecated
+[2015-08-19 21:47:37,802 main com.alibaba.druid.pool.DruidDataSource] testWhileIdle is true, validationQuery not set
+[2015-08-19 21:47:37,831 main com.alibaba.druid.pool.DruidDataSource] {dataSource-4} inited
+[2015-08-19 21:47:38,138 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+[2015-08-19 21:47:38,178 main org.springframework.jdbc.support.SQLErrorCodesFactory] SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+[2015-08-19 21:47:38,220 main org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3cc41abc: startup date [Wed Aug 19 21:47:38 CST 2015]; root of context hierarchy
+[2015-08-19 21:47:38,221 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring.xml]
+[2015-08-19 21:47:38,317 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring-mybatis.xml]
+[2015-08-19 21:47:38,470 main org.springframework.context.support.PropertySourcesPlaceholderConfigurer] Loading properties file from class path resource [conf/db.properties]
+[2015-08-19 21:47:38,504 main com.alibaba.druid.pool.DruidAbstractDataSource] maxIdle is deprecated
+[2015-08-19 21:47:38,506 main com.alibaba.druid.pool.DruidDataSource] testWhileIdle is true, validationQuery not set
+[2015-08-19 21:47:38,573 main com.alibaba.druid.pool.DruidDataSource] {dataSource-5} inited
+[2015-08-19 21:47:38,908 main org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@33aeca0b: startup date [Wed Aug 19 21:47:38 CST 2015]; root of context hierarchy
+[2015-08-19 21:47:38,911 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring.xml]
+[2015-08-19 21:47:39,050 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring-mybatis.xml]
+[2015-08-19 21:47:39,168 main org.springframework.context.support.PropertySourcesPlaceholderConfigurer] Loading properties file from class path resource [conf/db.properties]
+[2015-08-19 21:47:39,205 main com.alibaba.druid.pool.DruidAbstractDataSource] maxIdle is deprecated
+[2015-08-19 21:47:39,207 main com.alibaba.druid.pool.DruidDataSource] testWhileIdle is true, validationQuery not set
+[2015-08-19 21:47:39,244 main com.alibaba.druid.pool.DruidDataSource] {dataSource-6} inited
+[2015-08-19 21:47:39,567 main org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@75e91545: startup date [Wed Aug 19 21:47:39 CST 2015]; root of context hierarchy
+[2015-08-19 21:47:39,568 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring.xml]
+[2015-08-19 21:47:39,667 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring-mybatis.xml]
+[2015-08-19 21:47:39,768 main org.springframework.context.support.PropertySourcesPlaceholderConfigurer] Loading properties file from class path resource [conf/db.properties]
+[2015-08-19 21:47:39,795 main com.alibaba.druid.pool.DruidAbstractDataSource] maxIdle is deprecated
+[2015-08-19 21:47:39,796 main com.alibaba.druid.pool.DruidDataSource] testWhileIdle is true, validationQuery not set
+[2015-08-19 21:47:39,820 main com.alibaba.druid.pool.DruidDataSource] {dataSource-7} inited
+[2015-08-19 21:47:40,026 main org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@150ab4ed: startup date [Wed Aug 19 21:47:40 CST 2015]; root of context hierarchy
+[2015-08-19 21:47:40,027 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring.xml]
+[2015-08-19 21:47:40,103 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring-mybatis.xml]
+[2015-08-19 21:47:40,218 main org.springframework.context.support.PropertySourcesPlaceholderConfigurer] Loading properties file from class path resource [conf/db.properties]
+[2015-08-19 21:47:40,257 main com.alibaba.druid.pool.DruidAbstractDataSource] maxIdle is deprecated
+[2015-08-19 21:47:40,258 main com.alibaba.druid.pool.DruidDataSource] testWhileIdle is true, validationQuery not set
+[2015-08-19 21:47:40,293 main com.alibaba.druid.pool.DruidDataSource] {dataSource-8} inited

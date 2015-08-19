@@ -3,12 +3,11 @@
  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.selflife.dao.UserDao">
-            
+        <cache type="org.mybatis.caches.memcached.LoggingMemcachedCache" />
          <select  id="queryUser" parameterType="User" resultType="User">
              select ec_username,
 		         ec_password,
 		         	ec_userlevel from bd_user_dt where
 		         ec_username = #{ec_username} and ec_password = #{ec_password}
           </select>
-          
 </mapper>

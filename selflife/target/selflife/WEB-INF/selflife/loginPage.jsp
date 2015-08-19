@@ -1,6 +1,5 @@
 <%@ page isELIgnored="false" pageEncoding="utf-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-
 <!DOCTYPE html>
 <html lang="zh-cn">
   <head>
@@ -14,13 +13,9 @@
      <!--[if lt IE 9]>
       <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->	
-	<link rel="shortcut icon" href="Images/icon.png">
-	
+    <![endif]-->		
   </head>
-  <body>
-  
-  
+  <body> 
 <div class="jumbotron jumbotron_custom">
   <div class="container" style="margin:0 auto;width:90%;">
   <div class="panel-heading" style="text-align:center;margin-bottom:50px;background:#337AB7;">Selflife</div>

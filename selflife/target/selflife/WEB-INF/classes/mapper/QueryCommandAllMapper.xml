@@ -17,7 +17,9 @@
 			<select id="queryCommandAllByTime"  resultMap="queryAllCommandByTime">  
 						     SELECT  to_char(ec_command_time,'yyyy-mm') as time,
 						     count(distinct ec_command_id) as num
-  					FROM bd_command_dt group by time
+  					FROM bd_command_dt t, bd_techcat_dt c 
+			 				 where t.ec_cattag_code=c.ec_cattag_code 
+			 				 and ec_cattag_status=0 group by time
 			</select>  
 			<resultMap type="Statics" id="queryAllCommandByTime">
 				<result property="name" column="time"/>
@@ -33,7 +35,7 @@
 						SELECT  distinct t.ec_cattag_code as code,count(distinct ec_command_id) as num,
 						c.ec_cattag_name as name
 			 	 FROM bd_command_dt t, bd_techcat_dt c 
-			 				 where t.ec_cattag_code=c.ec_cattag_code 
+			 				 where t.ec_cattag_code=c.ec_cattag_code and ec_cattag_status=0
 			 	 group by code ,name order by code
 			</select>       
 </mapper>

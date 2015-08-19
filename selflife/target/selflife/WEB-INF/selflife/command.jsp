@@ -37,19 +37,28 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button> 
-		<a class="navbar-brand" href="index.html" >Selflife</a>
+	<a class="navbar-brand" href="/queryCommand/queryStaticsesByCatTag" >Selflife</a>
     </div>
 	 <div class="collapse navbar-collapse" id="navbar">
 	 <ul class="nav navbar-nav">
            
-           <li><a href="index.html">首页</a></li>
+           <li><a href="/queryCommand/queryStaticsesByCatTag">首页</a></li>
         <li><a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">博客<b class="caret"></b></a>		
 		 <ul class="dropdown-menu">
                 <li>
-                  <a href="http://v2.bootcss.com/getting-started.html" target="_blank" onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'navbar-v2doc-起步'])">标签</a>
+                  <a href="/queryCommand/queryStaticsesByCatTag">标签</a>
                 </li>
                 <li>
-                  <a href="http://v2.bootcss.com/getting-started.html" target="_blank" onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'navbar-v2doc-起步'])">时间</a>
+                  <a href="/queryCommand/queryStaticsesByTime" >时间</a>
+                </li>
+                 <li>
+                  <a href="/queryCommand/toCommandAdd">添加</a>
+                </li>
+                <li>
+                  <a href="/queryCommand/toAddCatTag">添加标签</a>
+                </li>
+                 <li>
+                  <a href="/queryCommand/cattagsList">标签列表</a>
                 </li>
               </ul>
 			  </li>
@@ -58,14 +67,14 @@
           </ul>
       <ul class="nav navbar-nav navbar-right">
         
-		<li><a href="english/index.html">English</a></li>
-      </ul>    
+		<li><a href="/loginPage">注销</a></li>
+      </ul> 
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container -->
 </nav>
 <div class="jumbotron jumbotron_custom">
   <div class="container">
-	 <div style="background:#efeeee;font-size:20px;padding:20px;"><c:out value="${hashmap.command.ec_command_title}"/><span style="margin-right:10px;"><a href="/queryCommand/toCommandUpdate/${hashmap.command.ec_command_id}">修改</a></span></div>
+	 <div style="background:#efeeee;font-size:20px;padding:20px;"><c:out value="${hashmap.command.ec_command_title}"/><span style="float:right;margin-right:10px;"><a href="/queryCommand/toCommandUpdate/${hashmap.command.ec_command_id}">修改</a></span></div>
 	 <div style="background:#efeeee;font-size:16px;line-height:2.0;padding:10px;"><c:out value="${hashmap.command.ec_command_shell}"/></div>
   </div>
 </div>
