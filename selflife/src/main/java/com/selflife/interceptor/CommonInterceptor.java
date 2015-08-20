@@ -3,23 +3,29 @@ package com.selflife.interceptor;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import javax.ws.rs.core.Context;
+
+//import org.slf4j.Logger;
+//import org.slf4j.LoggerFactory;
+import org.apache.log4j.Logger;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
+
 public class CommonInterceptor extends HandlerInterceptorAdapter{  
-    private final Logger log = LoggerFactory.getLogger(CommonInterceptor.class);  
+   // private final Logger log = LoggerFactory.getLogger(CommonInterceptor.class); 
+	 Logger log=Logger.getLogger(CommonInterceptor.class);
+
    // public static final String LAST_PAGE = "com.alibaba.lastPage";  
     /* 
-     * 利用正则映射到需要拦截的路径     
+     * 利用正则映射到需要拦截的路径      */  
       
     private String mappingURL; 
      
     public void setMappingURL(String mappingURL) {     
                this.mappingURL = mappingURL;     
     }    
-  */  
+ 
     /**  
      * 在业务处理器处理请求之前被调用  
      * 如果返回false  
@@ -32,24 +38,26 @@ public class CommonInterceptor extends HandlerInterceptorAdapter{
      *    接着再从最后一个拦截器往回执行所有的afterCompletion()  
      */    
     @Override    
-    public boolean preHandle(HttpServletRequest request,    
+    public boolean preHandle(@Context HttpServletRequest request,    
             HttpServletResponse response, Object handler) throws Exception { 
         log.info("==============执行顺序: 1、preHandle================");    
-System.out.println("aaaaaaaa");
-        if ("GET".equalsIgnoreCase(request.getMethod())) {  
-            RequestUtil.saveRequest();
-        }  
-        String requestUri = request.getRequestURI();  
-        String contextPath = request.getContextPath();  
-        String url = requestUri.substring(contextPath.length());  
-        
-        log.info("requestUri:"+requestUri);    
-        log.info("contextPath:"+contextPath);    
-        log.info("url:"+url);    
+//        	System.out.println("aaaaaaaa");
+//        if ("GET".equalsIgnoreCase(request.getMethod())) {  
+//            RequestUtil.saveRequest();
+//        }  
+//        String requestUri = request.getRequestURI();  
+//        String contextPath = request.getContextPath();  
+//        String url = requestUri.substring(contextPath.length());  
+//        
+//        log.info("requestUri:"+requestUri);    
+//        log.info("contextPath:"+contextPath);    
+//        log.info("url:"+url);    
           
-        String username =  (String)request.getSession().getAttribute("user");   
+        String username =  (String)request.getSession().getAttribute("username"); 
+        log.info("===="+username);    
+
         if(username == null){  
-            log.info("Interceptor：跳转到login页面！");  
+         //   log.info("Interceptor：跳转到login页面！");  
             request.getRequestDispatcher("/WEB-INF/selflife/loginPage.jsp").forward(request, response);  
             return false;  
         }else  
@@ -61,13 +69,13 @@ System.out.println("aaaaaaaa");
      * 可在modelAndView中加入数据，比如当前时间 
      */  
     @Override    
-    public void postHandle(HttpServletRequest request,    
+    public void postHandle(@Context HttpServletRequest request,    
             HttpServletResponse response, Object handler,    
             ModelAndView modelAndView) throws Exception {     
-        log.info("==============执行顺序: 2、postHandle================");    
-        if(modelAndView != null){  //加入当前时间    
-            modelAndView.addObject("var", "测试postHandle");    
-        }    
+//        log.info("==============执行顺序: 2、postHandle================");    
+//        if(modelAndView != null){  //加入当前时间    
+//            modelAndView.addObject("var", "测试postHandle");    
+//        }    
     }    
     
     /**  
@@ -76,7 +84,7 @@ System.out.println("aaaaaaaa");
      * 当有拦截器抛出异常时,会从当前拦截器往回执行所有的拦截器的afterCompletion()  
      */    
     @Override    
-    public void afterCompletion(HttpServletRequest request,    
+    public void afterCompletion(@Context HttpServletRequest request,    
             HttpServletResponse response, Object handler, Exception ex)    
             throws Exception {    
         log.info("==============执行顺序: 3、afterCompletion================");    

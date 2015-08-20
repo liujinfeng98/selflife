@@ -8,6 +8,7 @@ import javax.ws.rs.FormParam;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
+import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,7 +40,7 @@ public class UserLoginWeb {
 	@Path("/userLogin")
 	@Consumes(MediaType.APPLICATION_FORM_URLENCODED)
 	@Produces("application/json")
-	public ModelAndView queryUser(HttpServletRequest request,@FormParam("_user") String _user,
+	public ModelAndView queryUser(@Context HttpServletRequest request,@FormParam("_user") String _user,
 			@FormParam("_pwd") String _pwd){
 		if(!m.isEmpty()){
 			m.clear();
@@ -54,7 +55,7 @@ public class UserLoginWeb {
 			 try {
 				u=us.queryUser(u);
 				m.put("user", u);
-				request.getSession().setAttribute("user", u.getEc_username());
+				request.getSession().setAttribute("username", u.getEc_username());
 				List<Command> commands=qcas.queryCommandAll();
 				m.put("commands", commands);
 				return new ModelAndView("index","hashmap",m);

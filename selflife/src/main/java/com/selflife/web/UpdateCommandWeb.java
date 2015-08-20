@@ -44,8 +44,8 @@ public class UpdateCommandWeb {
 	@Autowired
 	private Command c; 
 	
-	@Autowired
-	private com.selflife.model.User u;
+//	@Autowired
+//	private com.selflife.model.User u;
 	
 	@POST
 	@Path("/updateCommand")
@@ -87,16 +87,15 @@ public class UpdateCommandWeb {
 		if(!m.isEmpty()){
 			m.clear();
 		}
-		if(u.getEc_username()==null){
-			return  new ModelAndView("loginPage");
-		}
+//		if(u.getEc_username()==null){
+//			return  new ModelAndView("loginPage");
+//		}
 		c.setEc_command_id(Integer.parseInt(commandid));
 		try {
 			c = qcos.queryCommand(c);
 			List<CatTag> cts=qcs.queryCatTagAllSelect();
 			m.put("cattags", cts);
 			m.put("command",c);
-			System.out.println("aaaaaaaa1");
 
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

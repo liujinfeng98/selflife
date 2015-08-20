@@ -90,6 +90,8 @@
             </description>
             <bean class="org.jboss.resteasy.plugins.spring.OptionalValueBeanFactory"
                   p:beanName="resteasy.dispatcher.interceptors"/>
+           
+  					  
         </property>
     </bean>
 
