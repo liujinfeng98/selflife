@@ -9,5 +9,6 @@ public interface QueryCatTag {
 	public List<CatTag> queryCatTagAll() throws Exception;
 	public List<CatTag> queryCatTagAllSelect() throws Exception;
 	public CatTag queryCatTag(CatTag ct) throws Exception;
+	public CatTag queryCatTagByCode(CatTag ct) throws Exception;
 
 }

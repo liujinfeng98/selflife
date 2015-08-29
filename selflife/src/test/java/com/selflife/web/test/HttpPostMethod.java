@@ -17,9 +17,11 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.cookie.Cookie;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class HttpPostMethod {
-
+	 private static Logger logger = LoggerFactory.getLogger(HttpPostMethod.class);
     public static void postUrlWithParams(String url, Map params, String encoding)  
             throws Exception {  
         DefaultHttpClient httpclient = new DefaultHttpClient();  
@@ -44,14 +46,18 @@ public class HttpPostMethod {
   
             System.out.println("Login form get: " + response.getStatusLine()  
                     + entity.getContent());  
+            logger.debug("Login form get: " + response.getStatusLine()  
+                    + entity.getContent());
             dump(entity, encoding);  
-            System.out.println("Post logon cookies:");  
+            //System.out.println("Post logon cookies:");  
+            logger.debug("Post logon cookies:");
             List<Cookie> cookies = httpclient.getCookieStore().getCookies();  
             if (cookies.isEmpty()) {  
-                System.out.println("None");  
+                 logger.debug("None");
             } else {  
                 for (int i = 0; i < cookies.size(); i++) {  
-                    System.out.println("- " + cookies.get(i).toString());  
+                   // System.out.println("- " + cookies.get(i).toString());
+                    logger.debug("- " + cookies.get(i).toString());
                 }  
             }  
   
@@ -64,7 +70,10 @@ public class HttpPostMethod {
             throws IOException {  
         BufferedReader br = new BufferedReader(new InputStreamReader(  
                 entity.getContent(), encoding));  
-        System.out.println(br.readLine());  
+       // System.out.println(br.readLine()); 
+        logger.info(br.readLine());
+        //logger.info("user", entity);
+        
     }  
 	
 }

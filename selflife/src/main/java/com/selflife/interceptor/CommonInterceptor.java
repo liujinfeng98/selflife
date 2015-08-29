@@ -20,11 +20,11 @@ public class CommonInterceptor extends HandlerInterceptorAdapter{
     /* 
      * 利用正则映射到需要拦截的路径      */  
       
-    private String mappingURL; 
-     
-    public void setMappingURL(String mappingURL) {     
-               this.mappingURL = mappingURL;     
-    }    
+//    private String mappingURL; 
+//     
+//    public void setMappingURL(String mappingURL) {     
+//               this.mappingURL = mappingURL;     
+//    }    
  
     /**  
      * 在业务处理器处理请求之前被调用  
@@ -76,6 +76,7 @@ public class CommonInterceptor extends HandlerInterceptorAdapter{
 //        if(modelAndView != null){  //加入当前时间    
 //            modelAndView.addObject("var", "测试postHandle");    
 //        }    
+      //  modelAndView.setViewName("redirect:/login");
     }    
     
     /**  

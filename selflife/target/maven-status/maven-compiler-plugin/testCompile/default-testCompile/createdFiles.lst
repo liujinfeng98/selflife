@@ -1,0 +1,13 @@
+com/selflife/service/test/UpdateCatTagServiceTest.class
+com/selflife/service/test/AddCatTagServiceTest.class
+com/selflife/service/test/UpdateCommandServiceTest.class
+com/selflife/web/test/HttpPostMethod.class
+com/selflife/service/test/DelCommandServiceTest.class
+com/selflife/service/test/QueryCommandAllServiceTest.class
+com/selflife/service/test/QueryCommandAllByContServiceTest.class
+com/selflife/service/test/AddCommandServiceTest.class
+com/selflife/service/test/QueryCatTagAllServiceTest.class
+com/selflife/service/test/SoftwareServiceTest.class
+com/selflife/web/test/ServerTimeTest.class
+com/selflife/service/test/QueryCommandServiceTest.class
+com/selflife/web/test/UserLoginTest.class

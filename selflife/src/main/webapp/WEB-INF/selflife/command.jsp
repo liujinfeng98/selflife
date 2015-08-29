@@ -67,7 +67,7 @@
           </ul>
       <ul class="nav navbar-nav navbar-right">
         
-		<li><a href="/loginPage">注销</a></li>
+		<li><a href="/loginPage/cancelQuit">注销</a></li>
       </ul> 
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container -->

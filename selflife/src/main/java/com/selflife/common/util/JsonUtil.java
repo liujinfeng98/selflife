@@ -16,7 +16,7 @@ import net.sf.json.util.JSONUtils;
 import net.sf.json.util.CycleDetectionStrategy;
 
 
-
+@SuppressWarnings("unchecked") 
 public class JsonUtil {
 	
 	  /**    

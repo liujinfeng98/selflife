@@ -67,7 +67,7 @@
           </ul>
       <ul class="nav navbar-nav navbar-right">
         
-		<li><a href="/loginPage">注销</a></li>
+		<li><a href="/loginPage/cancelQuit">注销</a></li>
       </ul> 
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container -->
@@ -81,7 +81,7 @@
 	</div>
 	<div class="input-group"style="margin:0 auto ;text-align:center;width:90%;margin-top:10px;">
 	  <span class="input-group-addon" id="basic-addon1">标题：</span>
-	  <input type="text" id="_title" name="_title" class="form-control" placeholder="请输入标题" aria-describedby="basic-addon1">
+	  <input type="text" id="_title" name="_title" maxlength="100" class="form-control" placeholder="请输入标题" aria-describedby="basic-addon1">
 	</div>
 <div style="margin:0 auto ;text-align:center;width:90%;margin-top:10px;">
  <span class="input-group-addon" style="float:left;width:68px;height:30px;" id="basic-addon1">标签：</span>

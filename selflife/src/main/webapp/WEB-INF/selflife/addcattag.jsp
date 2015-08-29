@@ -68,7 +68,7 @@
           </ul>
       <ul class="nav navbar-nav navbar-right">
         
-		<li><a href="/loginPage">注销</a></li>
+		<li><a href="/loginPage/cancelQuit">注销</a></li>
       </ul>   
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container -->
@@ -78,16 +78,18 @@
   		<form action="addCatTag" id="loginform" name="loginform" method="post">
 	<div class="panel panel-primary" style="height:400px;">
 	<div style="color:red;">
-	
+	<c:if test="${hashmap._ret==202}">
+		 标签编码已存在
+	</c:if>
 	</div>
 	<div class="input-group"style="margin:0 auto ;text-align:center;width:90%;margin-top:100px;">
 	  <span class="input-group-addon" id="basic-addon1"> 编码：</span>
-	  <input type="text" id="_code" name="_code" class="form-control" placeholder="请输入编码" aria-describedby="basic-addon1">
+	  <input type="text" id="_code" name="_code" class="form-control" maxlength="5" placeholder="请输入编码" aria-describedby="basic-addon1">
 	</div>
 <div class="input-group"style="margin:0 auto ;text-align:center;width:90%;margin-top:10px;">
 	  <span class="input-group-addon" id="basic-addon1"> 名称：</span>
 	  <input type="text" id="_name" name="_name" class="form-control" placeholder="请输入名称
-" aria-describedby="basic-addon1">
+" aria-describedby="basic-addon1" maxlength="100">
 	</div>
 <div style="margin:0 auto;margin-top:10px;text-align:center;width:80%;">
   

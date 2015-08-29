@@ -1,24 +1,19 @@
 package com.selflife.web.test;
 
 import org.junit.Test;
-
 import com.selflife.common.util.RegexUtil;
-
 import java.util.HashMap;
 import java.util.Map;
 
+@SuppressWarnings("unchecked") 
 public class UserLoginTest {
-
 	
 	//@Test
 		public void testDevParam(){
-		
 			String _uaccount="ljf1";
 			String _pwd="ljf1234";
-					
-					org.junit.Assert.assertTrue(RegexUtil.isAccount(_uaccount));
-					org.junit.Assert.assertTrue(RegexUtil.isPwd(_pwd));
-
+			org.junit.Assert.assertTrue(RegexUtil.isAccount(_uaccount));
+			org.junit.Assert.assertTrue(RegexUtil.isPwd(_pwd));
 		}
 	@Test
 	public void testUserLogin(){
@@ -39,6 +34,5 @@ public class UserLoginTest {
 			e.printStackTrace();
 		}
 	}
-	
 	
 }

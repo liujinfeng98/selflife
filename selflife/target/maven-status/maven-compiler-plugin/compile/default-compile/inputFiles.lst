@@ -10,7 +10,9 @@
 /home/ljf/selflifegit/selflife/src/main/java/com/selflife/ctrl/LoginCtrl.java
 /home/ljf/selflifegit/selflife/src/main/java/com/selflife/service/impl/UserServiceImpl.java
 /home/ljf/selflifegit/selflife/src/main/java/com/selflife/dao/UserDao.java
+/home/ljf/selflifegit/selflife/src/main/java/com/selflife/service/SoftwareService.java
 /home/ljf/selflifegit/selflife/src/main/java/com/selflife/web/UpdateCatTagWeb.java
+/home/ljf/selflifegit/selflife/src/main/java/com/selflife/ctrl/CancelQuitCtrl.java
 /home/ljf/selflifegit/selflife/src/main/java/com/selflife/web/AddCommandWeb.java
 /home/ljf/selflifegit/selflife/src/main/java/org/jboss/resteasy/examples/springmvc/ContactService.java
 /home/ljf/selflifegit/selflife/src/main/java/com/selflife/service/QueryCommandAllService.java
@@ -28,6 +30,7 @@
 /home/ljf/selflifegit/selflife/src/main/java/com/selflife/interceptor/CommonInterceptor.java
 /home/ljf/selflifegit/selflife/src/main/java/com/selflife/dao/AddCatTag.java
 /home/ljf/selflifegit/selflife/src/main/java/com/selflife/dao/QueryCatTag.java
+/home/ljf/selflifegit/selflife/src/main/java/com/selflife/dao/SoftwareDao.java
 /home/ljf/selflifegit/selflife/src/main/java/com/selflife/web/ServerTime.java
 /home/ljf/selflifegit/selflife/src/main/java/com/selflife/service/DelCommandService.java
 /home/ljf/selflifegit/selflife/src/main/java/com/selflife/common/util/DateTimeUtil.java
@@ -39,10 +42,12 @@
 /home/ljf/selflifegit/selflife/src/main/java/com/selflife/service/UpdateCommandService.java
 /home/ljf/selflifegit/selflife/src/main/java/com/selflife/model/HashMap1.java
 /home/ljf/selflifegit/selflife/src/main/java/com/selflife/dao/QueryCommand.java
+/home/ljf/selflifegit/selflife/src/main/java/com/selflife/model/Software.java
 /home/ljf/selflifegit/selflife/src/main/java/com/selflife/service/QueryCatTagService.java
 /home/ljf/selflifegit/selflife/src/main/java/com/selflife/dao/QueryCommandAll.java
 /home/ljf/selflifegit/selflife/src/main/java/com/selflife/service/AddCommandService.java
 /home/ljf/selflifegit/selflife/src/main/java/com/selflife/service/UpdateCatTagService.java
+/home/ljf/selflifegit/selflife/src/main/java/com/selflife/filter/LoginFilter.java
 /home/ljf/selflifegit/selflife/src/main/java/org/jboss/resteasy/examples/springmvc/Contacts.java
 /home/ljf/selflifegit/selflife/src/main/java/com/selflife/service/impl/AddCommandServiceImpl.java
 /home/ljf/selflifegit/selflife/src/main/java/org/jboss/resteasy/examples/springmvc/ContactsResource.java
@@ -54,5 +59,6 @@
 /home/ljf/selflifegit/selflife/src/main/java/com/selflife/service/QueryCommandByContService.java
 /home/ljf/selflifegit/selflife/src/main/java/com/selflife/web/QueryCatTagListWeb.java
 /home/ljf/selflifegit/selflife/src/main/java/com/selflife/web/UserLoginWeb.java
+/home/ljf/selflifegit/selflife/src/main/java/com/selflife/service/impl/SoftwareServiceImpl.java
 /home/ljf/selflifegit/selflife/src/main/java/com/selflife/service/QueryCommandService.java
 /home/ljf/selflifegit/selflife/src/main/java/com/selflife/service/impl/QueryCommandByContServiceImpl.java

@@ -1,6 +1,7 @@
 package com.selflife.web;
 
 import java.util.List;
+
 import javax.ws.rs.Consumes;
 import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
@@ -8,13 +9,16 @@ import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.servlet.ModelAndView;
+
 import com.selflife.common.util.RegexUtil;
 import com.selflife.model.CatTag;
 import com.selflife.model.Command;
 import com.selflife.service.AddCatTagService;
+import com.selflife.service.QueryCatTagService;
 import com.selflife.service.QueryCommandAllService;
 
 @Path("/queryCommand")
@@ -23,6 +27,8 @@ public class AddCatTagWeb {
 
 	@Autowired
 	private AddCatTagService ats;
+	@Autowired
+	private QueryCatTagService qts;
 	@Autowired
 	private com.selflife.model.LinkHashMap m;
 	@Autowired
@@ -48,9 +54,14 @@ public class AddCatTagWeb {
 			c.setName(name);
 			List<Command> commands=null;
 			try {
+				CatTag c1=qts.queryCatTagByCode(c);
+				if(c1==null){
 				ats.addCatTagService(c);
 				commands = qcas.queryCommandAll();
-
+				}else{
+					 m.put("_ret", Integer.valueOf("202"));
+					return  new ModelAndView("addcattag","hashmap",m);
+				}
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

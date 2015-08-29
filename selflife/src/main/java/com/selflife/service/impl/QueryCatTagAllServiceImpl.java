@@ -28,5 +28,10 @@ public class QueryCatTagAllServiceImpl implements QueryCatTagService{
 		// TODO Auto-generated method stub
 		return qct.queryCatTag(ct);
 	}
+	@Override
+	public CatTag queryCatTagByCode(CatTag ct) throws Exception {
+		// TODO Auto-generated method stub
+		return qct.queryCatTagByCode(ct);
+	}
 
 }

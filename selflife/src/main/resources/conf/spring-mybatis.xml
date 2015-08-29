@@ -43,10 +43,10 @@
     <property name="maxWait">
       <value>60000</value>
     </property>
-    <!-- 连接池最大空闲 -->
+    <!-- 连接池最大空闲 
     <property name="maxIdle">
       <value>20</value>
-    </property>
+    </property>-->
     <!-- 连接池最小空闲 -->
     <property name="minIdle">
       <value>3</value>
@@ -63,6 +63,20 @@
     <property name="connectionProperties">
       <value>clientEncoding=UTF-8</value>
     </property>
+     <!-- 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 -->
+      <property name="timeBetweenEvictionRunsMillis" value="60000" />
+
+      <!-- 配置一个连接在池中最小生存的时间，单位是毫秒 -->
+      <property name="minEvictableIdleTimeMillis" value="300000" />
+
+      <property name="validationQuery" value="SELECT 'x'" />
+      <property name="testWhileIdle" value="true" />
+      <property name="testOnBorrow" value="false" />
+      <property name="testOnReturn" value="false" />
+
+      <!-- 打开PSCache，并且指定每个连接上PSCache的大小 -->
+      <property name="poolPreparedStatements" value="true" />
+      <property name="maxPoolPreparedStatementPerConnectionSize" value="20" />
   </bean>
      
     <!-- mybatis文件配置，扫描所有mapper文件 -->

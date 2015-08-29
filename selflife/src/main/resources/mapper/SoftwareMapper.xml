@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.selflife.dao.SoftwareDao">
+         <insert  id="insertSoftware" parameterType="Software" >
+            	insert into  bd_soft_dt(
+							  ec_soft_name , 
+							  ec_soft_path ,
+							  ec_soft_time ,
+							  ec_cattag_code,
+							  ec_soft_useful )
+							  values(#{name},
+							  #{path},
+							  NOW(),
+							  #{code},
+							  #{useful}
+							  )
+          </insert>
+          	
+          	
+</mapper>

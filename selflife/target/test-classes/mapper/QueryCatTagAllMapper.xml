@@ -20,4 +20,8 @@
         		select ec_cattag_id as id,ec_cattag_name as name,ec_cattag_code as code,ec_cattag_status as status from bd_techcat_dt 
         		where ec_cattag_id=#{id}
          </select>
+         <select id="queryCatTagByCode" parameterType="CatTag" resultType="CatTag">
+        		select ec_cattag_id as id,ec_cattag_name as name,ec_cattag_code as code,ec_cattag_status as status from bd_techcat_dt 
+        		where ec_cattag_code=#{code}
+         </select>
 </mapper>
