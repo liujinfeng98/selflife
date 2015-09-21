@@ -1,0 +1,8 @@
+#sudo autoconf
+#sudo autoheader
+#sudo automake --add-missing
+#add Makefile.am
+#add NEWS
+#add README
+#add AUTHOR
+#add ChangeLog

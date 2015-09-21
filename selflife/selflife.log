@@ -1,4 +1,5 @@
-[2015-09-21 20:16:27,992 main org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@13fee20c: startup date [Mon Sep 21 20:16:27 CST 2015]; root of context hierarchy
+[2015-09-21 20:21:24,582 Shutdown org.springframework.web.context.support.XmlWebApplicationContext] Closing WebApplicationContext for namespace 'springmvc-servlet': startup date [Mon Sep 21 20:07:36 CST 2015]; parent: Root WebApplicationContext
+t hierarchy
 [2015-09-21 20:16:28,445 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring.xml]
 [2015-09-21 20:16:29,160 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [conf/spring-mybatis.xml]
 [2015-09-21 20:16:29,519 main org.springframework.context.support.PropertySourcesPlaceholderConfigurer] Loading properties file from class path resource [conf/db.properties]
