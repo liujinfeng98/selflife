@@ -4,7 +4,6 @@ import java.util.Collection;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
 import org.apache.commons.lang.StringUtils;
 import java.text.SimpleDateFormat;
 
@@ -17,7 +16,7 @@ import java.text.SimpleDateFormat;
 @SuppressWarnings("unchecked")
 public class RegexUtil {
 
-   
+ 
     
     public final static boolean isNull(Object[] objs){
         if(objs==null||objs.length==0) return true;
@@ -106,7 +105,7 @@ public class RegexUtil {
      * @return
      */
     public final static boolean isAccount(String str) {
-        return match(str, "^[a-z]\\w{1,32}$");
+        return match(str, "^[A-Za-z]\\w{2,19}$");
     }
     
     /**
@@ -128,6 +127,7 @@ public class RegexUtil {
      * @author 
      */
     public final static boolean isEmail(String str) {
+    		if(null==str) return true;
         return "".equals(str)?true : match(str, "^\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*$");
     }
     
@@ -208,7 +208,7 @@ public class RegexUtil {
      */
     public final static boolean isMobile(String text){
     	
-    		if("".equals(text))return true;
+    		if(text==null||"".equals(text))return true;
         if(text.length()!=11) return false;
         	
         return match(text, "^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\\d{8})$");
@@ -460,7 +460,8 @@ public class RegexUtil {
     /**
      *  valid stamp
      */
-    static SimpleDateFormat sdf3 = new SimpleDateFormat("yyyyMMddHHmmss");
+	private final static String sty="yyyyMMddHHmmss";
+
 
     public final static boolean validStamp(String stamp,int dsecord){
     	if(stamp.length()!=12)return false;
@@ -484,40 +485,50 @@ public class RegexUtil {
           cal.add(java.util.Calendar.MILLISECOND, -(zoneOffset + dstOffset));
       	java.util.Date d=new java.util.Date(cal.getTimeInMillis());
     	long d1=d.getTime()/1000;
-    	try{
+    	try{   
+         SimpleDateFormat sdf3 = new SimpleDateFormat(sty);
             d=sdf3.parse("20"+stamp);
     	}catch(Exception e){
-    		
+    		e.getMessage();
     	}
     	long  d2=d.getTime()/1000;
     	long dSpace=0;
     	if(d1>d2)dSpace=d1-d2;
     	else dSpace=d2-d1;
-    	System.out.println(d1+"|"+dSpace+"|"+d2);
+    	//System.out.println(d1+"|"+dSpace+"|"+d2);
     	if(dSpace>dsecord)return false;
     	return true;
     }
 
-    public static boolean validStrLen(String verfiy,int len){
-    	if(verfiy.length()==len)return true;
+    public static boolean validStrLen(String verify,int len){
+    	if(verify.length()==len)return true;
+    	else return false;
+    }
+    public static boolean validStrScope32(String verify){
+    	if(verify.length()<=32&&verify.length()>=1)return true;
+    	else return false;
+    }
+    public static boolean validStrScope(String verify,int len){
+    	if(verify.length()<=len&&verify.length()>=1)return true;
     	else return false;
     }
     
     public static boolean validTypeValue(String type,String value){
-    	if(!isInteger(type) )return false;
     	boolean a=false;
     	switch (Integer.parseInt(type)){
     	case 1:
-    		a= isPwd(value);
+    		a= validStrLen(value,32);
     		break;
     	case 2:
     		a=true;
     		break;
     	case 3:
-    		a=isEmail(value);
+        
+    		a=isMobile(value);
     		break;
     	case 4:
-    		a=isMobile(value);
+        
+    		a=isEmail(value);
     		break;
     	default:
     		a=false;

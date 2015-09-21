@@ -16,7 +16,7 @@ import net.sf.json.util.JSONUtils;
 import net.sf.json.util.CycleDetectionStrategy;
 
 
-@SuppressWarnings("unchecked") 
+
 public class JsonUtil {
 	
 	  /**    
@@ -268,7 +268,7 @@ public class JsonUtil {
      * @author:
      * @create:Dec 28, 201011:33:49 AM
      */
-    public static String ObjectToJson ( Object obj ){
+    public static String objectToJson ( Object obj ){
     	JSONObject jsonObj = JSONObject.fromObject(obj);
     	return jsonObj.toString();
     }
@@ -280,7 +280,7 @@ public class JsonUtil {
      * @author:
      * @create:Dec 28, 201011:33:49 AM
      */
-    public static String MapToJson ( Object obj ){
+    public static String mapToJson ( Object obj ){
     	JSONObject jsonObj = JSONObject.fromObject(obj);
     	return jsonObj.toString();
     }
@@ -292,13 +292,13 @@ public class JsonUtil {
      * @author:
      * @create:Dec 28, 201011:33:49 AM
      */
-    public static String ListToJson ( Object obj ){
+    public static String listToJson ( Object obj ){
     	JsonConfig jsconfig = configJson("yyyy-MM-dd HH:mm:ss");
     	JSONArray jsonArray = JSONArray.fromObject(obj,jsconfig);    	
     	return jsonArray.toString();
     }
     /**
-     * 对象属性中有时间的。
+       * 对象属性中有时间的。
      * @param json
      * @param object
      * @return
@@ -308,7 +308,7 @@ public class JsonUtil {
     public static Object jsonTOBeanDateFormat(String json,Class object){
     	String[] dateFormats = new String []{"yyyy-mm-dd"};
 		JSONObject jsonObj = JSONObject.fromObject(json);
-		JSONUtils.getMorpherRegistry().registerMorpher(new DateMorpher(dateFormats) );
+		JSONUtils.getMorpherRegistry().registerMorpher(new DateMorpher(dateFormats));
 		return JSONObject.toBean(jsonObj,object);
     }
     
@@ -325,10 +325,6 @@ public class JsonUtil {
         }   
         return jsonString == null ? "{}" : jsonString;   
     }   
-    
-
-
-	
-	
+ 	
 
 }

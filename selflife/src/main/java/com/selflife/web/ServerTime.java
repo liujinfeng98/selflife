@@ -29,7 +29,7 @@ public class ServerTime {
 		}
 		m.put("_ret", Integer.valueOf(100));
 		m.put("_utc", Long.valueOf(new Date().getTime()/1000-0x53724E00));
-		return JsonUtil.MapToJson(m);
+		return JsonUtil.mapToJson(m);
 	}
 	@GET
 	@Path("/")
@@ -40,7 +40,7 @@ public class ServerTime {
 		}
 		m.put("_ret", Integer.valueOf(100));
 		m.put("_utc", Long.valueOf(new Date().getTime()/1000-0x53724E00));
-		return JsonUtil.MapToJson(m);
+		return JsonUtil.mapToJson(m);
 	}
 	@POST
 	@Path("/")
@@ -51,7 +51,7 @@ public class ServerTime {
 		}
 		m.put("_ret", Integer.valueOf(100));
 		m.put("_utc", Long.valueOf(new Date().getTime()/1000-0x53724E00));
-		return JsonUtil.MapToJson(m);
+		return JsonUtil.mapToJson(m);
 	}
 	
 }

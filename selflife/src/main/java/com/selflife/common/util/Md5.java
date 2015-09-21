@@ -59,8 +59,8 @@ public class Md5 {
 	for (int i = 0 ; i < buf.length; i++) {
 	    int h = (buf[i] & 0xf0) >> 4 ;
 	    int l = (buf[i] & 0x0f) ;
-	    sb.append (new Character((char)((h>9) ? 'a'+h-10 : '0'+h))) ;
-	    sb.append (new Character((char)((l>9) ? 'a'+l-10 : '0'+l))) ;
+	    sb.append (Character.valueOf((char)((h>9) ? 'a'+h-10 : '0'+h))) ;
+	    sb.append (Character.valueOf((char)((l>9) ? 'a'+l-10 : '0'+l))) ;
 	}
 	return sb.toString() ;
     }
@@ -260,18 +260,18 @@ public class Md5 {
      *    input stream.
      */
 
-    public byte[] getDigest ()
-	throws IOException 
-    {
-	byte buffer[] = new byte[BUFFER_SIZE] ;
-	int  got      = -1 ;
-
-	if ( digest != null )
-	    return digest ;
-	while ((got = in.read(buffer)) > 0 ) 
-	    update (buffer, got) ;
-	this.digest = end () ;
-	return digest ;
+    public byte[] getDigest () throws IOException {
+		byte buffer[] = new byte[BUFFER_SIZE] ;
+		int  got      = -1 ;
+	
+		if ( digest != null )
+		    return digest ;
+		if(in!=null){
+			while ((got = in.read(buffer)) > 0 ) 
+			    update (buffer, got) ;
+			this.digest = end();
+		}
+		return digest ;
     }
 
     /**
@@ -321,7 +321,7 @@ public class Md5 {
 	    throw new RuntimeException("no "+enc+" encoding!!!");
 	}
 	this.stringp = true ;
-	this.in      = new ByteArrayInputStream (bytes) ;
+	this.in      = new ByteArrayInputStream (bytes);
 	this.state   = new int[4] ;
 	this.buffer  = new byte[64] ;
 	this.count   = 0 ;
@@ -367,9 +367,9 @@ public class Md5 {
 		//byte tk[] = new byte[16] ;
 		byte key1 [] ;
 		int i ;
-		int text_len = text.getBytes().length ;
-		int key_len = key.getBytes().length ; 
-		key1 = key.getBytes() ; 
+		int text_len = text.getBytes("UTF8").length ;
+		int key_len = key.getBytes("UTF8").length ; 
+		key1 = key.getBytes("UTF8") ; 
 		
 		if ( key_len > 64 ) {
 			key1 = new Md5( key ).getDigest() ;
@@ -393,7 +393,7 @@ public class Md5 {
 		
 		Md5 md5 = new Md5( "" ) ;
 		md5.update( k_ipad , 64 ) ;
-		md5.update( text.getBytes() , text_len ) ; 
+		md5.update( text.getBytes("UTF8") , text_len ) ; 
 		digest = md5.getDigest() ;
 	
 		Md5 md51 = new Md5( "" ) ;
@@ -418,6 +418,7 @@ public class Md5 {
 			}
 			
 		} catch (Exception ex) {
+				ex.getMessage();
 		}
 		return result.toString().toUpperCase();
 	}

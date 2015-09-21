@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.selflife.dao.AddCommand">
+            
+         <insert id="addCommand" parameterType="Command" keyProperty="ec_command_id">
+             insert into bd_command_dt(          
+	            ec_command_title,
+	         	ec_command_shell,
+	         	ec_cattag_code,
+	         	ec_command_time
+		         )
+		       values
+		         ( 
+		        #{ec_command_title},#{ec_command_shell},#{ ec_cattag_code} ,    
+		         NOW()
+		         )
+         </insert>
+          
+</mapper>

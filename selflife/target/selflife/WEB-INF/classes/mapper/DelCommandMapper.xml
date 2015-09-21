@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.selflife.dao.DelCommand">
+            
+<update id="delCommand" parameterType="Command">  
+			      delete from bd_command_dt  c
+		        where c.ec_command_id=#{ec_command_id}
+</update>          
+</mapper>

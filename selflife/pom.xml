@@ -1,5 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+  
+   <prerequisites>
+        <maven>3.2.3</maven>
+    </prerequisites> 
+    
   <groupId>com.selflife</groupId>
   <artifactId>selflift_web</artifactId>
   <version>0.0.2-SNAPSHOT</version>
@@ -26,7 +31,18 @@
     <!--modules>
         <module>osgi_web</module>
     </modules-->
-
+<developers>
+       
+        <developer>
+            <name>jeff liu</name>
+            <email>liujinfeng98@hotmail.com</email>
+            <timezone>China/beijing</timezone>
+            <roles>
+                <role>committer</role>
+            </roles>
+        </developer>
+        
+</developers>
      <!--  dependency>
         <groupId>org.jboss.resteasy</groupId>
         <artifactId>resteasy-servlet-initializer</artifactId>
@@ -242,6 +258,24 @@
     <build>
         <finalName>selflife</finalName>
         <plugins>
+        <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>findbugs-maven-plugin</artifactId>
+                <version>3.0.0</version>
+                <configuration>
+                    <effort>Max</effort>
+                    <threshold>Default</threshold>
+                    <xmlOutput>true</xmlOutput>
+                    <excludeFilterFile>findbugs-exclude.xml</excludeFilterFile>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-deploy-plugin</artifactId>

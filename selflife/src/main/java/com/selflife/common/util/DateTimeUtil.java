@@ -3,7 +3,6 @@ package com.selflife.common.util;
 import java.sql.Timestamp;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Date;
 
 /**
@@ -177,7 +176,7 @@ public class DateTimeUtil {
 	 *            String 默认为"yyyy-MM-dd hh:mm:ss"
 	 * @return boolean
 	 */
-	public static boolean CheckTime(String time, String dateFormat) {
+	public static boolean checkTime(String time, String dateFormat) {
 		if (null == dateFormat || "".equals(dateFormat.trim())) {
 			dateFormat = "yyyy-MM-dd hh:mm:ss";
 		}
@@ -194,7 +193,8 @@ public class DateTimeUtil {
 		String dat = "1900-1-1 00:00:00";
 		String dat2 = "2100-1-1 00:00:00";
 		String dat3 = "2003-05-09";
-		System.out.println(DateTimeUtil.shortFmt(new Date(), null));
+		//System.out.println(DateTimeUtil.shortFmt(new Date(), null));
+		System.out.println(digitalToChinese(1011345));
 	}
 	/**
 	 * 
@@ -236,13 +236,13 @@ public class DateTimeUtil {
 //	}
 	public static String digitalToChinese(int digital){
 		String[] zharray = {"零","一","二","三","四","五","六","七","八","九"};
-		 String st = new Integer(digital).toString();
-		 String target = "";
-		 for(int i=0;i<st.length();i++){
+		 String st = Integer.toString(digital);
+		  StringBuffer buf = new StringBuffer();  
+		  for(int i=0;i<st.length();i++){
 			 String sub = st.substring(i, i+1);
-			 target +=zharray[Integer.parseInt(sub)];
+			 buf.append(zharray[Integer.parseInt(sub)]);
 		 }
-		 return target;
+		 return buf.toString();
 	}
 	
 	/**
@@ -255,7 +255,9 @@ public class DateTimeUtil {
 		String dt = sdf.format(new Date());
 		return dt;
 	}
-	   final static  SimpleDateFormat sdf4 = new SimpleDateFormat("yyyyMMddHHmmss");
+	   
+	   private static final String COMMON_DATE = "yyyyMMddHHmmss";  
+	   
 	/**
 	 *  ce shi shi yong UTC shi jian
 	 * @return
@@ -265,6 +267,7 @@ public class DateTimeUtil {
          int zoneOffset = cal.get(java.util.Calendar.ZONE_OFFSET);
          int dstOffset = cal.get(java.util.Calendar.DST_OFFSET);
          cal.add(java.util.Calendar.MILLISECOND, -(zoneOffset + dstOffset));
+         SimpleDateFormat sdf4 = new SimpleDateFormat(COMMON_DATE); 
      	java.util.Date d=new java.util.Date(cal.getTimeInMillis());
      	return sdf4.format(d).substring(2, 14);
      	

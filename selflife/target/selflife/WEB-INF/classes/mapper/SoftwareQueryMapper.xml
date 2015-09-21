@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.selflife.dao.SoftwareDao">            
+        <cache type="org.mybatis.caches.memcached.LoggingMemcachedCache" />
+          <select  id="queryAllSoftware"  resultMap="querySoftwareList">
+             select ec_soft_id as id,
+				           ec_soft_name as name, 
+							  ec_soft_path as path,
+							  ec_cattag_code as code,
+							  ec_soft_useful as useful from bd_soft_dt 
+          </select>  
+          		<resultMap type="Software" id="querySoftwareList">
+          				<id property="id" column="id"/>
+          				<result property="name" column="name"/>
+          				<result property="path" column="path"/>
+          				<result property="code" column="code"/>
+          				<result property="useful" column="useful"/>
+          		</resultMap>
+          <select id="querySoftware" parameterType="Software" resultType="Software">
+          		select ec_soft_id as id,
+				           ec_soft_name as name, 
+							  ec_soft_path as path,
+							  ec_cattag_code as code,
+							  ec_soft_useful as useful 
+							  from bd_soft_dt where ec_soft_id=#{id}
+          </select>    
+          <select id="querySoftwareByName" parameterType="Software" resultType="Software">
+          		select ec_soft_id as id,
+				           ec_soft_name as name, 
+							  ec_soft_path as path,
+							  ec_cattag_code as code,
+							  ec_soft_useful as useful 
+							  from bd_soft_dt where ec_soft_name=#{name}
+          </select>        
+</mapper>
